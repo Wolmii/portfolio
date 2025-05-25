@@ -4,381 +4,293 @@
     <meta charset="UTF-8">
     <title>Regnier Mathilde Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 
 <body>
-    <header style="min-height: 100vh;">
-        <div>
-            <img class="oui" src="images/micat.png" title="Mathilde en chat" alt="Mathilde en version chat">
-            <section>
-                <h1 class="regnier">Regnier</h1>
-                <article>
-                    <img src="images/etoile.png" title="Etoile" alt="Une petite étoile">
-                    <h1 class="mathilde">Mathilde</h1>
-                </article>
-                <nav>
-                    <ul>
-                        <li><a href="#etude">Etudes</a></li>
-                        <li><a href="#exp">Expériences</a></li>
-                        <li><a href="#proj">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
+    <header>
+        <div class="header-content">
+            <img src="images/etoile.png" alt="étoile décorative" class="etoile-header">
+            <h1>
+                <span class="surname">Regnier</span>
+                <span class="name">Mathilde</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#etude">Études</a></li>
+                    <li><a href="#exp">Expériences</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
     </header>
+
     <main>
-        <div>
-            <img src="images/dentelle_b1.jpg" title="Etoile" alt="Une petite étoile">
-            <section>
+        <section id="presentation" class="section">
+            <div class="container">
+                <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
                 <h2>Présentation</h2>
-                <p>Bonjour et bienvenue sur mon site !</p>
-                <p>Après avoir découvert le monde du jeu vidéo, j’ai fait un DUT technique de commercialisation à Amiens, dans le but de travailler dans ce domaine, en marketing, car je n’avais aucune compétence en informatique.</p>
-                <p>Après deux ans d’études, je me suis rendue compte que le commerce n’était pas ma voie de prédilection, et après avoir aidé des amis à coder un petit jeu vidéo pendant l’été, je me suis trouvée emportée dans le monde passionnant de l’informatique.</p>
-                <p>Et me voici donc, en première année de BUT Informatique à Lannion !</p>
-                <p>En explorant mon site, vous trouverez certains des projets que j’ai réalisés, et n'hésitez pas à me contacter pour parler de projets passionnants.</p>
-                <br>
-                <h3>Passions</h3>
-                <ul>
-                    <li>
-                        <p>Astronomie</p>
-                        <p>L’astronomie est un sujet qui m’intéresse énormément, bien que j’y connaisse peu. Travailler dans ce domaine était un de mes rêves d’enfants (grande fan de Doctor Who).</p>
-                    </li>
-                    <li>
-                        <p>Jeux vidéos</p>
-                        <p>Je suis passionnée de jeux vidéo depuis plusieurs années maintenant. Je joue très souvent après les cours, principalement à League of Legends (level 600+). C’est d’ailleurs ce centre d'intérêt qui m’a fait me tourner vers l’informatique.</p>
-                    </li>
-                    <li>
-                        <p>Pokemon</p>
-                        <p>Depuis petite, je collectionne les cartes Pokemon et je regarde l’anime. Et c’est un centre d'intérêt qui me suis encore aujourd’hui, car je continue de collectionner les cartes.</p>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <section>
-            <h2 id="etude">Etudes</h2>
-            <img src="images/liste.png" title="Etoile" alt="Une petite étoile">
-            <ul>
-                <li>
-                    <p>BUT Informatique</p>
-                    <p><a hr="https://iut-lannion.univ-rennes.fr/informatique">Institut universitaire de technologie, Lannion</a></p>
-                    <p>1ère année</p>
-                </li>
-                <li>
-                    <p>BUT Technique de commercialisation </p>
-                    <p><a hr="https://www.iut-amiens.fr/techniques-de-commercialisation/">Institut universitaire de technologie, Amiens</a></p>
-                    <p>Parcourt stratégie de marque et événementiel</p>
-                </li>
-                <li>
-                    <p>BAC Général</p>
-                    <p><a hr="https://www.lyceedesgraves.fr/">Lycée des Graves, Gradignan</a></p>
-                    <p>Spécialité SVT et Physique chimie, mention bien</p>
-                </li>
-            </ul>
-        </section>
-        <img src="images/coupure.png" title="Etoile" alt="Une petite étoile">
-        <section>
-            <h2 id="exp">Expériences</h2>
-            <article>
-                <h3>Bénévole a l'association FSA</h3>
-                <p>2015 a 2018</p>
-                <p>Pendant une grande partie de mon collège, je participais à la vie de l’association, en faisant des collectes et des distributions de produits d’hygiène, principalement pour les femmes, mais surtout les personnes dans le besoin. J’ai d'ailleurs participé à l’organisation, à la mise en place et au déroulé d’une collecte de produits d'hygiène au sein de mon collège. </p>
-                <p>Compétences développées :</p>
-                <ul>
-                    <li>Esprit d'équipe et management d'équipe</li>
-                    <li>Organisation et mise en place de projet</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Stage de première année de BUT TC : conceillère de vente a Gamecash</h3>
-                <p>mai 2023, Amiens</p>
-                <p>J’ai effectué mon stage de première année de DUT TC a Game Cash, une franchise qui s’occupe d’achat et de vente de jeux vidéo et d’accessoires. J’ai eu la chance de travailler dans cette équipe pendant un mois, ou j’ai pu développer plusieurs compétences.</p>
-                <p>Compétences développées :</p>
-                <ul>
-                    <li>Travail d’équipe</li>
-                    <li>Vente</li>
-                    <li>Organisation d’un espace de vente</li>
-                    <li>Gestion de la relation client</li>
-                    <li>Prise de parole en public</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Stage de deuxième année de BUT TC : assistante marketing a Definima</h3>
-                <p>avril a mai 2024, Gradignan</p>
-                <p>J’ai eu la chance, pour mon stage de deuxième année de DUT TC dans l’agence web Definima, à Gradignan. Lors de ce stage en tant qu’assistante marketing, j’ai découvert le monde du référencement (SEO, SEA), avec une multitude d’outils d’analyse. J’ai aussi créé des articles pour des sites clients, et le site de l’entreprise elle-même.</p>
-                <p>Compétences développées :</p>
-                <ul>
-                    <li>Analyse</li>
-                    <li>Travail d’équipe</li>
-                    <li>Autonomie</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Job d'été : agent d'entretien</h3>
-                <p>juin a aout 2024, Bordeaux</p>
-                <p>L’été 2024, j’ai travaillé dans le nettoyage de train. Nous étions en équipe et devions faire une tâche précise, en un temps limité.</p>
-                <p>Compétences développées :</p>
-                <ul>
-                    <li>Gestion du stress</li>
-                    <li>Travail en équipe</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Job étudiant : représentante des élèves au CROUS</h3>
-                <p>octobre 2024 a juin 2025, Lannion</p>
-                <p>Pendant ma première année de BUT info, j’ai eu un job étudiant à côté. Mes principales missions étaient d’organiser et d’encadrer des évènements au sein de l’établissement crous. En m’occupant notamment de la communication, et du contact avec les étudiants.</p>
-                <p>Compétences développées :</p>
-                <ul>
-                    <li>Organisation d’évènements</li>
-                    <li>Prise de parole en public</li>
-                </ul>
-            </article>
-        </section>
-        <img src="images/coupure.png" title="Etoile" alt="Une petite étoile">
-        <section>
-            <h2>Langages</h2>
-            <div>
-                <article>
-                    <h3>C</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>Python</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>Sql</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>HTML</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>CSS</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>PHP</h3>
-                    <p>Débutante</p>
-                </article>
-                <article>
-                    <h3>Java</h3>
-                    <p>Bonne maitrise</p>
-                </article>
-                <article>
-                    <h3>Java fx</h3>
-                    <p>Débutante</p>
-                </article>
+                <div class="content">
+                    <p>Bonjour et bienvenue sur mon site !</p>
+                    <p>Après avoir découvert le monde du jeu vidéo, j'ai fait un DUT technique de commercialisation à Amiens, dans le but de travailler dans ce domaine, en marketing, car je n'avais aucune compétence en informatique.</p>
+                    <p>Après deux ans d'études, je me suis rendue compte que le commerce n'était pas ma voie de prédilection, et après avoir aidé des amis à coder un petit jeu vidéo pendant l'été, je me suis trouvée emportée dans le monde passionnant de l'informatique.</p>
+                    <p>Et me voici donc, en première année de BUT Informatique à Lannion !</p>
+                    <p>En explorant mon site, vous trouverez certains des projets que j'ai réalisés, et n'hésitez pas à me contacter pour parler de projets passionnants.</p>
+
+                    <div class="passions">
+                        <h3>Passions</h3>
+                        <div class="passions-grid">
+                            <div class="passion-card">
+                                <h4>Astronomie</h4>
+                                <p>L'astronomie est un sujet qui m'intéresse énormément, bien que j'y connaisse peu. Travailler dans ce domaine était un de mes rêves d'enfants (grande fan de Doctor Who).</p>
+                            </div>
+                            <div class="passion-card">
+                                <h4>Jeux vidéos</h4>
+                                <p>Je suis passionnée de jeux vidéo depuis plusieurs années maintenant. Je joue très souvent après les cours, principalement à League of Legends (level 600+). C'est d'ailleurs ce centre d'intérêt qui m'a fait me tourner vers l'informatique.</p>
+                            </div>
+                            <div class="passion-card">
+                                <h4>Pokemon</h4>
+                                <p>Depuis petite, je collectionne les cartes Pokemon et je regarde l'anime. Et c'est un centre d'intérêt qui me suis encore aujourd'hui, car je continue de collectionner les cartes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <article id="overlay-1" style="display: none;" onclick="closeOverlay('1')" class="overlay">
-                <div>
-                    <h3>Snake automatique</h3>
-                    <p>Compétence développée : Optimiser</p>
-                    <p>Ce projet est un snake automatique dans le terminal en C. J’ai eu des contraintes à respecter, comme l’ajout d’un second serpent, ou encore une génération de pommes aléatoires. J’ai aussi dû veiller au nombre de déplacements du serpent, afin d’optimiser au maximum son chemin automatique. 
-                    </p>
-                    <div>
-                        <div>
-                            <h4>Langage </h4>
-                            <ul>
-                                <li>C</li>
-                            </ul>
+
+        <section id="etude" class="section">
+            <div class="container">
+                <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
+                <h2>Études</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>BUT Informatique</h3>
+                            <p class="location">Institut universitaire de technologie, Lannion</p>
+                            <p class="period">1ère année</p>
                         </div>
-                        <div>
-                            <h4>Outil :</h4>
-                            <ul>
-                                <li>Git Hub</li>
-                            </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>BUT Technique de commercialisation</h3>
+                            <p class="location">Institut universitaire de technologie, Amiens</p>
+                            <p class="period">Parcourt stratégie de marque et événementiel</p>
                         </div>
-                        <div>
-                            <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>BAC Général</h3>
+                            <p class="location">Lycée des Graves, Gradignan</p>
+                            <p class="period">Spécialité SVT et Physique chimie, mention bien</p>
                         </div>
                     </div>
                 </div>
-            </article>
-            <article id="overlay-2" style="display: none;" onclick="closeOverlay('2')" class="overlay">
-                <div>
-                    <h3>Snake dans un terminal</h3>
-                    <p>Compétence développée : Développer une application informatique</p>
-                    <p>Ce projet est un Snake jouable dans le terminal avec les touches du clavier, en C. Lors de ce projet, j’ai suivi un cahier des charges évolutif, et fournit du code a chaque étape, respectant les contraintes demandées. J’ai également fourni un cahier de tests, qui devait couvrir toutes les erreurs éventuelles, et prouver que toutes les contraintes étaient respectées. Enfin, j’ai réalisé une documentation complète du code à l'aide de Doxygen. 
-                    </p>
-                    <div>
-                        <div>
-                                <h4>Langage :</h4>
-                            <ul>
-                                <li>C</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Outil :</h4>
-                            <ul>
-                                <li>Documentation doxygen</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article id="overlay-3" style="display: none;" onclick="closeOverlay('3')" class="overlay">
-                <div>
-                    <h3>Gestion de fichiers</h3>
-                    <p>Compétence développée : Administer système informatique</p>
-                    <p>Pour ce projet de groupe, nous avons dans un premier temps analysé un lot de fichier, en fonction de demandes précises, afin d’identifier les différents problèmes de chaque fichier. Ensuite, à l'aide d’images Docker, nous avons modifier tous les fichiers, en faisant en sorte qu’ils correspondent aux exigences. Et dans un troisième temps, nous avons automatisé cette procédure, a l’aide de scripts PHP. </p>
-                    <div>
-                        <div>
-                            <h4>Langage :</h4>
-                            <ul>
-                                <li>PHP</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Outil :</h4>
-                            <ul>
-                                <li>Docker</li>
-                            </ul>
-                            <div>
-                                <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article id="overlay-4" style="display: none;" onclick="closeOverlay('4')" class="overlay">
-                <div>
-                    <h3>Ligue de Football</h3>
-                    <p>Compétence développée : Gérer des données</p>
-                    <p>En duo, nous avons réalisé ce projet, qui consistait à imaginer et à mettre en place une base de données pour un tournoi de football. En partant de la description écrite, nous avons élaboré le schéma UML de la base de données, puis nous l’avons codée en Tutorial D.
-                    </p>
-                    <div>
-                        <div>
-                            <h4>Langage :</h4>
-                            <ul>
-                                <li>Tutorial D</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Outil :</h4>
-                            <ul>
-                                <li>Git Hub</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article id="overlay-5" style="display: none;" onclick="closeOverlay('5')" class="overlay">
-                <div>
-                    <h3>Site pour les JO</h3>
-                    <p>Compétence développée : Conduire un projet</p>
-                    <p>Ce projet est un projet de groupe, qui nous a mené à la réalisation d’un site web. A partir d’un brief client, nous avons identifié les besoins spécifiques du site. Puis nous avons élaboré une charte graphique ainsi qu’une maquette. Et enfin chaque membre de l’équipe a codé une page du site. Nous avons ensuite soutenu notre travail depuis le commencement lors d’un oral. Nous avons donc dû nous coordonner dans le groupe, et nous répartir les tâches de manière à avancer au mieux tout au long de la création du site. </p>
-                    <div>
-                        <div>
-                            <h4>Langages :</h4>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Outils :</h4>
-                            <ul>
-                                <li>Google Documents</li>
-                                <li>Canva</li>
-                                <li>Git Hub</li>
-                                <li>Figma</li>
-                            </ul>
-                            <div>
-                                <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article id="overlay-6" style="display: none;" onclick="closeOverlay('6')" class="overlay">
-                <div>
-                    <h3>Analyse de l'entreprise LEGO</h3>
-                    <p>Compétence développée : Travailler dans une équipe</p>
-                    <p>Ce projet est un projet de groupe, ou nous avons choisi une entreprise, que nous avons analysé à plusieurs échelles : macro et micro. Après avoir fait de nombreuses recherches sur l’entreprise et son environnement, nous avons fourni un Pestel sur les caractéristiques de son environnement, un Porter sur les particularités de son marché, ainsi qu’un SWOT sur ses problématiques propres. Enfin, nous avons soutenu notre travail lors d’un oral devant un jury composé de professeurs. 
-                    </p>
-                    <div>
-                        <div>
-                            <h4>Outils :</h4>
-                            <ul>
-                                <li>Google Documents</li>
-                                <li>Canva</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            </div>
         </section>
-        <section>
-            <h2 id="proj">Projets</h2>
-            <img src="images/dentelle_fin.jpg" title="Etoile" alt="Une petite étoile">
-            <div>
-                <article onclick="openOverlay('1')">
-                    <h3>Snake dans un terminal</h3>
-                    <p>Compétence développée : Développer une application informatique</p>
-                </article>
-                <article onclick="openOverlay('2')">
-                    <h3>Snake automatique</h3>
-                    <p>Compétence développée : Optimiser</p>
-                </article>
-                <article onclick="openOverlay('3')">
-                    <h3>Gestion de fichiers</h3>
-                    <p>Compétence développée : Administer système informatique</p>
-                </article>
-                <article onclick="openOverlay('4')">
-                    <h3>Ligue de Football</h3>
-                    <p>Compétence développée : Gérer des données</p>
-                </article>
-                <article onclick="openOverlay('5')">
-                    <h3>Site pour les JO</h3>
-                    <p>Compétence développée : Conduire un projet</p>
-                </article>
-                <article onclick="openOverlay('6')">
-                    <h3>Analyse de l'entreprise LEGO</h3>
-                    <p>Compétence développée : Travailler dans une équipe</p>
-                </article>
+
+        <section id="exp" class="section">
+            <div class="container">
+                <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
+                <h2>Expériences</h2>
+                <div class="experiences-grid">
+                    <article class="experience-card">
+                        <h3>Bénévole à l'association FSA</h3>
+                        <p class="period">2015 à 2018</p>
+                        <p>Pendant une grande partie de mon collège, je participais à la vie de l'association, en faisant des collectes et des distributions de produits d'hygiène, principalement pour les femmes, mais surtout les personnes dans le besoin.</p>
+                        <div class="competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>Esprit d'équipe et management d'équipe</li>
+                                <li>Organisation et mise en place de projet</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <h3>Stage de première année de BUT TC : conseillère de vente à Gamecash</h3>
+                        <p class="period">Mai 2023, Amiens</p>
+                        <p>J'ai effectué mon stage de première année de DUT TC à Game Cash, une franchise qui s'occupe d'achat et de vente de jeux vidéo et d'accessoires.</p>
+                        <div class="competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>Travail d'équipe</li>
+                                <li>Vente</li>
+                                <li>Organisation d'un espace de vente</li>
+                                <li>Gestion de la relation client</li>
+                                <li>Prise de parole en public</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <h3>Stage de deuxième année de BUT TC : assistante marketing à Definima</h3>
+                        <p class="period">Avril à mai 2024, Gradignan</p>
+                        <p>Stage en tant qu'assistante marketing dans l'agence web Definima. Découverte du référencement (SEO, SEA) et création de contenu web.</p>
+                        <div class="competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>Analyse</li>
+                                <li>Travail d'équipe</li>
+                                <li>Autonomie</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <h3>Job d'été : agent d'entretien</h3>
+                        <p class="period">Juin à août 2024, Bordeaux</p>
+                        <p>Nettoyage de train en équipe avec des contraintes de temps.</p>
+                        <div class="competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>Gestion du stress</li>
+                                <li>Travail en équipe</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <h3>Job étudiant : représentante des élèves au CROUS</h3>
+                        <p class="period">Octobre 2024 à juin 2025, Lannion</p>
+                        <p>Organisation et encadrement d'événements au sein de l'établissement CROUS.</p>
+                        <div class="competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>Organisation d'événements</li>
+                                <li>Prise de parole en public</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <div class="container">
+                <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
+                <h2>Compétences</h2>
+                <div class="competences-grid">
+                    <div class="competence-card">
+                        <h3>C</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>Python</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>SQL</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>HTML</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>CSS</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>PHP</h3>
+                        <p>Débutante</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>Java</h3>
+                        <p>Bonne maîtrise</p>
+                    </div>
+                    <div class="competence-card">
+                        <h3>Java FX</h3>
+                        <p>Débutante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <div class="container">
+                <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
+                <h2>Projets</h2>
+                <div class="projets-grid">
+                    <article class="projet-card" onclick="openOverlay('1')">
+                        <h3>Snake automatique</h3>
+                        <p>Compétence développée : Optimiser</p>
+                    </article>
+                    <article class="projet-card" onclick="openOverlay('2')">
+                        <h3>Snake dans un terminal</h3>
+                        <p>Compétence développée : Développer une application informatique</p>
+                    </article>
+                    <article class="projet-card" onclick="openOverlay('3')">
+                        <h3>Gestion de fichiers</h3>
+                        <p>Compétence développée : Administer système informatique</p>
+                    </article>
+                    <article class="projet-card" onclick="openOverlay('4')">
+                        <h3>Ligue de Football</h3>
+                        <p>Compétence développée : Gérer des données</p>
+                    </article>
+                    <article class="projet-card" onclick="openOverlay('5')">
+                        <h3>Site pour les JO</h3>
+                        <p>Compétence développée : Conduire un projet</p>
+                    </article>
+                    <article class="projet-card" onclick="openOverlay('6')">
+                        <h3>Analyse de l'entreprise LEGO</h3>
+                        <p>Compétence développée : Travailler dans une équipe</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <h2 id="contact">Contact</h2>
-            <p>06 95 89 13 93</p>
-            <p><a href="mailto:mathiilde.rgr@gmail.com">Mon mail :) : mathiilde.rgr@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/mathilderegnier/">Mon Linkedin</a></p>
-        </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="etoile-section"><img src="images/etoile.png" alt="étoile décorative"></div>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>06 95 89 13 93</p>
+                <p><a href="mailto:mathiilde.rgr@gmail.com">mathiilde.rgr@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/mathilderegnier/">LinkedIn</a></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Overlays pour les projets -->
+    <div id="overlay-1" class="overlay" onclick="closeOverlay('1')">
+        <div class="overlay-content">
+            <h3>Snake automatique</h3>
+            <p>Compétence développée : Optimiser</p>
+            <p>Ce projet est un snake automatique dans le terminal en C. J'ai eu des contraintes à respecter, comme l'ajout d'un second serpent, ou encore une génération de pommes aléatoires. J'ai aussi dû veiller au nombre de déplacements du serpent, afin d'optimiser au maximum son chemin automatique.</p>
+            <div class="projet-details">
+                <div>
+                    <h4>Langage</h4>
+                    <ul>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Outils</h4>
+                    <ul>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Répéter pour les autres overlays... -->
+
+    <script>
+        function openOverlay(id) {
+            document.getElementById(`overlay-${id}`).style.display = 'flex';
+        }
+
+        function closeOverlay(id) {
+            document.getElementById(`overlay-${id}`).style.display = 'none';
+        }
+    </script>
 </body>
-
-<!--
-1. developper application informatique
-2. Optimiser
-3. Administer système informatique
-4. Gérer des données
-5. Conduire un projet
-6. Travailler dans une équipe
--->
-
-<script>
-    function openOverlay(id) {
-    document.getElementById(`overlay-${id}`).style.display = 'flex';
-    }
-
-    function closeOverlay(id) {
-    document.getElementById(`overlay-${id}`).style.display = 'none';
-    }
-</script>
+</html>

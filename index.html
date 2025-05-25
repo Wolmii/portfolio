@@ -8,6 +8,14 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#etude">Etudes</a></li>
+            <li><a href="#exp">Expériences</a></li>
+            <li><a href="#proj">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header style="min-height: 100vh;">
         <div>
             <img class="oui" src="images/micat.png" title="Mathilde en chat" alt="Mathilde en version chat">
@@ -27,7 +35,6 @@
                 </nav>
             </section>
         </div>
-        
     </header>
     <main>
         <div>
@@ -362,7 +369,7 @@
     </main>
     <footer>
         <section>
-            <h2 id="contact">Contactez moi !!</h2>
+            <h2 id="contact">Contactez moi</h2>
             <p>Mon numéro : 06 95 89 13 93</p>
             <p>Mon mail :) :<a href="mailto:mathiilde.rgr@gmail.com"> mathiilde.rgr@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/mathilderegnier/">Mon Linkedin</a></p>
@@ -387,4 +394,19 @@
     function closeOverlay(id) {
     document.getElementById(`overlay-${id}`).style.display = 'none';
     }
+</script>
+
+<script>
+    window.addEventListener("DOMContentLoaded", ()=>{
+        const showNav = () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 600) {
+            navbar.classList.add('visible');
+            } else {
+            navbar.classList.remove('visible');
+            }
+        }
+        window.addEventListener('scroll', showNav);
+        showNav();
+    });
 </script>

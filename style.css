@@ -31,11 +31,11 @@
     src: url(polices/Montserrat-Regular.ttf);
 }
 
-
 body{
     margin:0px;
     padding:0px;
     font-family: 'mont';
+    font-size: max(16px, calc(16vw / 19.2));
 }
 
 main{
@@ -118,7 +118,7 @@ nav{
     /*HAAAAAAAAAAAAAAAA POURQUOIIIIIIIIIIIIIIIIIIi*/
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
     margin-top: -25%;
@@ -126,7 +126,7 @@ nav ul {
     gap: 10%;
 }
 
-nav li a {
+header nav li a {
     text-decoration: none;
     color: black;
     font-size: 2em;
@@ -137,9 +137,50 @@ nav li a:hover {
     color: var(--color-accent);
 }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+    padding: 0%;
+    font-size: 1rem;
+    z-index: 3;
+}
+
+#navbar.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#navbar ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover{
+    color: var(--color-accent);
+}
+
+/* intersection observer */
+
 /* première section */
 main > div{
-    position: static;
+    position: relative;
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -150,6 +191,7 @@ main > div section{
     width: 70%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2%;
 }
 
 main > div:first-of-type img{
@@ -159,6 +201,7 @@ main > div:first-of-type img{
     width: 100%;
     margin: 0%;
     padding: 0%;
+    z-index: -1;
 }
 
 main > div section h2{
@@ -170,16 +213,19 @@ main > div section > ul{
     display: flex;
     flex-direction: row;
     width:100%;
+    justify-content: space-between;
+    gap:10px;
+    padding: 0%;
 }
 
 main > div section > ul >li{
-    margin: 2em;
     background-color: var(--color-off-white);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-light-gray);
     transition: var(--transition);
     list-style-type: none;
+    width: 25%;
 }
 
 main > div section > ul >li:hover {
@@ -268,8 +314,6 @@ main section:nth-of-type(2) article{
     margin-bottom: 2em;
 }
 
-
-
 main section:nth-of-type(2) article:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(132, 173, 234, 0.18);
@@ -288,6 +332,7 @@ main section:nth-of-type(3) > div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: nowrap
 }
 
 main section:nth-of-type(3) > div article{
@@ -363,7 +408,7 @@ main section:nth-of-type(3) > div article:hover {
 
 /* dernière section */
 
-main section:last-of-type{
+main > section:last-of-type{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,7 +464,6 @@ main section:last-of-type > img{
     padding: 0%;
     z-index: -1;
 }
-
 
 /* footer */
 footer{

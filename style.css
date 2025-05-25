@@ -188,6 +188,10 @@ main > div section > ul >li:hover {
     border-color: var(--color-accent);
 }
 
+main > div section > ul >li p:first-of-type{
+    font-weight: bold;
+}
+
 
 /* deuxième section */
 

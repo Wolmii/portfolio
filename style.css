@@ -177,20 +177,9 @@ nav li a:hover {
     color: var(--color-accent);
 }
 
-#navbar.etude{
-    background-color: var(--color-accent);
-}
-
-#navbar.in-exp ul li:nth-of-type(2){
-    color: var(--color-accent);
-}
-
-#navbar.in-proj ul li:nth-of-type(3){
-    color: var(--color-accent);
-}
-
-#navbar.in-contact ul li:nth-of-type(4){
-    color: var(--color-accent);
+#navbar a.active {
+  color: var(--color-accent);
+  font-weight: bold;
 }
 
 /* intersection observer */
@@ -211,7 +200,7 @@ main > div section{
     padding-bottom: 2%;
 }
 
-main > div:first-of-type img{
+main > div:first-of-type > img{
     opacity: 10%;
     position: absolute;
     height: 100%;
@@ -236,6 +225,7 @@ main > div section > ul{
 }
 
 main > div section > ul >li{
+    position: relative;
     background-color: var(--color-off-white);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
@@ -249,6 +239,19 @@ main > div section > ul >li:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(132, 173, 234, 0.18);
     border-color: var(--color-accent);
+
+}
+
+.ima{
+    position: absolute;
+    opacity: 0%;
+    bottom: 0%;
+    right: 0%;
+    height: 50%;
+}
+
+main > div section > ul li:hover .ima{
+    opacity: 8%;
 }
 
 main > div section > ul >li p:first-of-type{

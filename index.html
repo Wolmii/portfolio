@@ -53,14 +53,17 @@
                     <li>
                         <p>Astronomie</p>
                         <p>L’astronomie est un sujet qui m’intéresse énormément, bien que j’y connaisse peu. Travailler dans ce domaine était un de mes rêves d’enfants (grande fan de Doctor Who).</p>
+                        <img class="ima" src="images/astro.png">
                     </li>
                     <li>
                         <p>Jeux vidéos</p>
                         <p>Je suis passionnée de jeux vidéo depuis plusieurs années maintenant. Je joue très souvent après les cours, principalement à League of Legends (level 600+). C’est d’ailleurs ce centre d'intérêt qui m’a fait me tourner vers l’informatique.</p>
+                        <img  class="ima" src="images/note.png">
                     </li>
                     <li>
                         <p>Pokemon</p>
                         <p>Depuis petite, je collectionne les cartes Pokemon et je regarde l’anime. Et c’est un centre d'intérêt qui me suis encore aujourd’hui, car je continue de collectionner les cartes.</p>
+                        <img  class="ima" src="images/ball.png">
                     </li>
                 </ul>
             </section>
@@ -377,6 +380,31 @@
         </section>
     </footer>
     <img src="images/noctali.png">
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("#navbar a");
+
+  window.addEventListener("scroll", () => {
+    let currentSectionId = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100; // décalage pour le header
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSectionId}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 </body>
 
 <!--
@@ -411,23 +439,4 @@
         window.addEventListener('scroll', showNav);
         showNav();
     });
-</script>
-
-<script>
-  const navbar = document.getElementById("navbar");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navbar.classList.remove("in-etude", "in-exp", "in-proj", "in-contact");
-        navbar.classList.add(`in-${entry.target.id}`);
-      }
-    });
-  }, {
-    threshold: 0.5
-  });
-
-  document.querySelectorAll(".section").forEach((section) => {
-    observer.observe(section);
-  });
 </script>

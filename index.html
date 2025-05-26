@@ -10,19 +10,20 @@
 <body>
     <nav id="navbar">
         <ul>
+            <li><a href="#head">Info</a></li>
             <li><a href="#etude">Etudes</a></li>
             <li><a href="#exp">Expériences</a></li>
             <li><a href="#proj">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header style="min-height: 100vh;">
+    <header id="head" style="min-height: 100vh;">
         <div>
             <img class="oui" src="images/micat.png" title="Mathilde en chat" alt="Mathilde en version chat">
             <section>
                 <h1 class="regnier">Regnier</h1>
                 <article>
-                    <img src="images/etoile.png" title="Etoile" alt="Une petite étoile">
+                    <img src="images/etoile.png" alt="Une petite étoile">
                     <h1 class="mathilde">Mathilde</h1>
                 </article>
                 <nav>
@@ -38,7 +39,7 @@
     </header>
     <main>
         <div>
-            <img src="images/dentelle_b1.jpg" title="Etoile" alt="Une petite étoile">
+            <img src="images/dentelle_b1.jpg" alt="Une petite étoile">
             <section>
                 <h2>Présentation</h2>
                 <p>Bonjour et bienvenue sur mon site !</p>
@@ -65,8 +66,8 @@
             </section>
         </div>
         <section>
-            <h2 id="etude">Etudes</h2>
-            <img src="images/liste.png" title="Etoile" alt="Une petite étoile">
+            <h2 id="etude" class="section">Etudes</h2>
+            <img src="images/liste.png" alt="Une petite étoile">
             <ul>
                 <a target="_blank" href="https://iut-lannion.univ-rennes.fr/informatique">
                     <li>
@@ -79,7 +80,7 @@
                     <li>
                         <p>BUT Technique de commercialisation </p>
                         <p>Institut universitaire de technologie, Amiens</p>
-                        <p>Parcourt stratégie de marque et événementiel</p>
+                        <p>Parcours stratégie de marque et événementiel</p>
                     </li>
                 </a>
                 <a target="_blank" href="https://www.lyceedesgraves.fr/">
@@ -91,9 +92,9 @@
                 </a>
             </ul>
         </section>
-        <img src="images/coupure.png" title="Etoile" alt="Une petite étoile">
+        <img src="images/coupure.png" alt="Une petite étoile">
         <section>
-            <h2 id="exp">Expériences</h2>
+            <h2 id="exp" class="section">Expériences</h2>
             <article>
                 <h3>Bénévole a l'association FSA</h3>
                 <p>2015 a 2018</p>
@@ -291,7 +292,7 @@
                 <div>
                     <h3>Site pour les JO</h3>
                     <p>Compétence développée : Conduire un projet</p>
-                    <p>Ce projet est un projet de groupe, qui nous a mené à la réalisation d’un site web. A partir d’un brief client, nous avons identifié les besoins spécifiques du site. Puis nous avons élaboré une charte graphique ainsi qu’une maquette. Et enfin chaque membre de l’équipe a codé une page du site. Nous avons ensuite soutenu notre travail depuis le commencement lors d’un oral. Nous avons donc dû nous coordonner dans le groupe, et nous répartir les tâches de manière à avancer au mieux tout au long de la création du site. </p>
+                    <p>Ce projet est un projet de groupe, qui nous a mené à la réalisation d’un site web. A partir d’un brief client, nous avons identifié les besoins spécifiques du site. Puis nous avons élaboré une charte graphique ainsi qu’une maquette. Et enfin chaque membre de l’équipe a codé une page du site. Je me suis occupée de la page Discipline. Nous avons ensuite soutenu notre travail depuis le commencement lors d’un oral. Nous avons donc dû nous coordonner dans le groupe, et nous répartir les tâches de manière à avancer au mieux tout au long de la création du site. </p>
                     <div>
                         <div>
                             <h4>Langages :</h4>
@@ -310,7 +311,7 @@
                             </ul>
                         </div>
                         <div class="git-img">
-                            <a target="_blank" href=""><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
+                            <a target="_blank" href="https://github.com/Henkaeru/jo-2024"><img src="images/git.png" title="Git Hub" alt="logo de git hub"></a>
                         </div>
                     </div>
                 </div>
@@ -337,8 +338,8 @@
             </article>
         </section>
         <section>
-            <h2 id="proj">Projets</h2>
-            <img src="images/dentelle_fin.jpg" title="Etoile" alt="Une petite étoile">
+            <h2 id="proj" class="section">Projets</h2>
+            <img src="images/dentelle_fin.jpg" alt="Une petite étoile">
             <div>
                 <article onclick="openOverlay('1')">
                     <h3>Snake dans un terminal</h3>
@@ -369,12 +370,13 @@
     </main>
     <footer>
         <section>
-            <h2 id="contact">Contactez moi</h2>
+            <h2 id="contact" class="section">Contactez moi</h2>
             <p>Mon numéro : 06 95 89 13 93</p>
             <p>Mon mail :) :<a href="mailto:mathiilde.rgr@gmail.com"> mathiilde.rgr@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/mathilderegnier/">Mon Linkedin</a></p>
         </section>
     </footer>
+    <img src="images/noctali.png">
 </body>
 
 <!--
@@ -409,4 +411,23 @@
         window.addEventListener('scroll', showNav);
         showNav();
     });
+</script>
+
+<script>
+  const navbar = document.getElementById("navbar");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navbar.classList.remove("in-etude", "in-exp", "in-proj", "in-contact");
+        navbar.classList.add(`in-${entry.target.id}`);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  document.querySelectorAll(".section").forEach((section) => {
+    observer.observe(section);
+  });
 </script>

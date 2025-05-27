@@ -113,12 +113,6 @@ header > div section article{
     padding: 0%;
 }
 
-nav{
-    position: sticky;
-    top: 2em;
-    /*HAAAAAAAAAAAAAAAA POURQUOIIIIIIIIIIIIIIIIIIi*/
-}
-
 header nav ul {
     list-style: none;
     padding: 0;
@@ -251,7 +245,7 @@ main > div section > ul >li:hover {
 }
 
 main > div section > ul li:hover .ima{
-    opacity: 8%;
+    opacity: 5%;
 }
 
 main > div section > ul >li p:first-of-type{

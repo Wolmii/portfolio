@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
-<!-- photo de moi, cv téléchargable, mettre ce que je cherche, objectif -->
+<!-- photo de moi, mettre ce que je cherche : objectif -->
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="#head">Info</a></li>
-            <li><a href="#etude">Etudes</a></li>
-            <li><a href="#exp">Expériences</a></li>
-            <li><a href="#proj">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#head" class="scroll-link">Info</a></li>
+            <li><a href="#etude" class="scroll-link">Etudes</a></li>
+            <li><a href="#exp" class="scroll-link">Expériences</a></li>
+            <li><a href="#proj" class="scroll-link">Projets</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
     </nav>
     <header id="head" style="min-height: 100vh;">
@@ -28,10 +28,10 @@
                 </article>
                 <nav>
                     <ul>
-                        <li><a href="#etude">Etudes</a></li>
-                        <li><a href="#exp">Expériences</a></li>
-                        <li><a href="#proj">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#etude" class="scroll-link">Etudes</a></li>
+                        <li><a href="#exp" class="scroll-link">Expériences</a></li>
+                        <li><a href="#proj" class="scroll-link">Projets</a></li>
+                        <li><a href="#contact" class="scroll-link">Contact</a></li>
                     </ul>
                 </nav>
             </section>
@@ -46,7 +46,7 @@
                 <p>Après avoir découvert le monde du jeu vidéo, j’ai fait un DUT technique de commercialisation à Amiens, dans le but de travailler dans ce domaine, en marketing, car je n’avais aucune compétence en informatique.</p>
                 <p>Après deux ans d’études, je me suis rendue compte que le commerce n’était pas ma voie de prédilection, et après avoir aidé des amis à coder un petit jeu vidéo pendant l’été, je me suis trouvée emportée dans le monde passionnant de l’informatique.</p>
                 <p>Et me voici donc, en première année de BUT Informatique à Lannion !</p>
-                <p>En explorant mon site, vous trouverez certains des projets que j’ai réalisés, et n'hésitez pas à me contacter pour parler de projets passionnants.</p>
+                <p>En explorant mon site, vous trouverez certains des projets que j’ai réalisés, et n'hésitez pas à me contacter pour parler de projets passionnants !!</p>
                 <br>
                 <h3>Passions</h3>
                 <ul>
@@ -440,4 +440,19 @@
         window.addEventListener('scroll', showNav);
         showNav();
     });
+</script>
+
+<script>
+  document.querySelectorAll('a.scroll-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        const offset = window.innerHeight * 0.1; 
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
 </script>

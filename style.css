@@ -509,3 +509,15 @@ body > img{
     bottom: 0%;
     left: 5%;
 }
+
+.cv{
+    display: flex;
+    align-self: center;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cv:hover{
+    color: var(--color-accent);
+}

@@ -310,7 +310,7 @@ section:first-of-type a {
 /*Section Expérience*/
 main section:nth-of-type(2){
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 

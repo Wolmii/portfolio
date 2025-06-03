@@ -197,7 +197,7 @@ main > div section{
     padding-bottom: 2%;
 }
 
-main > div:first-of-type > img{
+main > div:first-of-type > img:first-of-type{
     opacity: 10%;
     position: absolute;
     height: 100%;
@@ -557,6 +557,15 @@ footer a:hover{
 
 nav img{
     width: 2em;
+}
+
+.moi{
+    width: 12%;
+    position: absolute;
+    left: 1em;
+    top:12%;
+    border-color: #000000;
+
 }
 
 /* .dent1{

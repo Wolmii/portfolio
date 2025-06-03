@@ -512,6 +512,14 @@ body > img{
     color: var(--color-accent);
 }
 
+.stage{
+    font-weight: bold;
+}
+
+.an{
+    font-style: italic;
+}
+
 /* .dent1{
     position: absolute;
     height: 100%;
